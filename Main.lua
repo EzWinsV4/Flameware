@@ -7,6 +7,8 @@ local function runscript()
   wait(0.3)
 end
 
+runscript()
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Flame 2.0", 
     Text = "Flame for Rivals Script Executed! // Q to lock, E for ESP!", 
