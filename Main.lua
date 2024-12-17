@@ -1,13 +1,9 @@
-local function runscript()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Aimlock.lua", true))()
-  wait(0.3)
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/ESP.lua", true))()
-  wait(0.3)
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/ProjectileExploit.lua", true))()
-  wait(0.3)
-end
-
-runscript()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Aimlock.lua", true))()
+wait(0.3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/ESP.lua", true))()
+wait(0.3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/ProjectileExploit.lua", true))()
+wait(0.3)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Flame 2.0", 
