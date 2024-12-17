@@ -67,6 +67,6 @@ end)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Flame", 
-    Text = "Aimlock Loaded", 
+    Text = "Aimlock Loaded // Q to toggle lock", 
     Duration = 2,
 })
