@@ -20,4 +20,9 @@ if humanoid then
     end)
 end
 
-print("[]]----[ Loaded! ]----[[]")
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Flame", 
+    Text = "Speed Loaded!", 
+    Duration = 2,
+})
