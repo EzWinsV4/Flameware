@@ -58,3 +58,10 @@ UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
         toggleHighlighting()
     end
 end)
+
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Flame", 
+    Text = "ESP Loaded // E to toggle ESP", 
+    Duration = 2,
+})
