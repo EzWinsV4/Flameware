@@ -23,6 +23,6 @@ end
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Flame", 
-    Text = "Speed Loaded!", 
+    Text = "Speed Loaded", 
     Duration = 2,
 })
