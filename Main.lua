@@ -7,6 +7,8 @@ if not getgenv().FlameExecuted then
     wait(0.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Speed.lua", true))()
     wait(0.5)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Flame.lua", true))()
+
     
     getgenv().FlameExecuted = true
     
