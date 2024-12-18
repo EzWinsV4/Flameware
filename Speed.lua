@@ -1,7 +1,7 @@
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 
-local speed = 1
+local speed = 4
 local tpwalking = true
 
 task.spawn(function()
