@@ -1,10 +1,11 @@
 getgenv().FlameExecuted = getgenv().FlameExecuted or false
 
+local player = game:GetService("Players")
+
 local FlamePrivateUser = {
     7701051029,
 }
 
-local player = game.Players.LocalPlayer
 local isFlamePrivateUser = false
 
 for _, id in ipairs(FlamePrivateUser) do
