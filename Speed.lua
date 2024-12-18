@@ -40,15 +40,8 @@ if humanoid then
     end)
 end
 
-if isWhitelisted() then
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Flame Private", 
-        Text = "Private Speed Loaded",
-        Duration = 2,
-    })
-else
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Flame", 
-        Text = "Speed Loaded",
-        Duration = 2,
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Flame", 
+    Text = "Speed Loaded",
+    Duration = 2,
     })
