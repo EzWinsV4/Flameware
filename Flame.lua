@@ -1,10 +1,10 @@
-local player = game:GetService("Players")
+local player = game:GetService("Players").LocalPlayer
 
 FlamePrivateUsers = {
   7701051029,
 }
-  
-if player.UserId == FlamePrivateUsers then
+
+if table.find(FlamePrivateUsers, player.UserId) then
   game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame Private", 
     Text = "Hello Flame Private user!",
