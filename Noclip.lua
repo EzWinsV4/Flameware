@@ -11,16 +11,15 @@ end
 
 userInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
-    if input.KeyCode == Enum.KeyCode.N then
+    if input.KeyCode == Enum.KeyCode.V then
         toggleNoclip()
     end
 end)
 
 runService.Stepped:Connect(function()
     while true do
-      
         task.wait(5)
-      
+
         local character = player.Character or player.CharacterAdded:Wait()
         
         if noclipEnabled and character then
@@ -33,10 +32,10 @@ runService.Stepped:Connect(function()
     end
 end)
 
-wait(0.5)
+task.wait(0.5)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Flame", 
-    Text = "Noclip Loaded // N to toggle", 
+    Text = "Noclip Loaded // V to toggle", 
     Duration = 2,
 })
