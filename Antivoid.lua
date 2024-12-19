@@ -22,6 +22,11 @@ local function createPartForPlayer(player)
                 local pastPosition = positionHistory[math.max(1, #positionHistory - math.floor(historyDuration / checkInterval))]
                 if pastPosition then
                     humanoidRootPart.CFrame = pastPosition
+                    game:GetService("StarterGui"):SetCore("SendNotification", {
+                        Title = "Flame", 
+                        Text = "Antivoid teleported you back to safe place!",
+                        Duration = 3,
+                    })
                 end
             end
         end)
@@ -44,3 +49,9 @@ end)
 if player.Character then
     createPartForPlayer(player)
 end
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Flame", 
+    Text = "Antivoid Loaded", 
+    Duration = 2,
+})
