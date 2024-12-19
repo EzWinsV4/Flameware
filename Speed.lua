@@ -30,6 +30,11 @@ UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
     if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == toggleKey then
         tpwalking = not tpwalking
         local state = tpwalking and "Enabled" or "Disabled"
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Flame", 
+            Text = "Speed " .. state,
+            Duration = 2,
+        })
     end
 end)
 
