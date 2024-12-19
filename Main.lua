@@ -2,11 +2,11 @@ if not getgenv().FlameExecuted then
     getgenv().FlameExecuted = true
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Aimlock.lua", true))()
-    wait(0.5)
+    task.wait(0.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/ESP.lua", true))()
-    wait(0.5)
+    task.wait(0.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Speed.lua", true))()
-    wait(0.5)
+    task.wait(0.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Flame.lua", true))()
 
     game:GetService("StarterGui"):SetCore("SendNotification", {
