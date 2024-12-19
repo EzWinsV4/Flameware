@@ -3,7 +3,7 @@ local userInputService = game:GetService("UserInputService")
 local runService = game:GetService("RunService")
 
 local player = players.LocalPlayer
-local noclipEnabled = true
+local noclipEnabled = false
 
 local function toggleNoclip()
     noclipEnabled = not noclipEnabled
