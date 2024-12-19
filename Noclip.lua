@@ -7,6 +7,12 @@ local noclipEnabled = false
 
 local function toggleNoclip()
     noclipEnabled = not noclipEnabled
+    local state = noclipEnabled and "Enabled" or "Disabled"
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Flame", 
+        Text = "Noclip " .. state,
+        Duration = 2,
+    })
 end
 
 userInputService.InputBegan:Connect(function(input, gameProcessed)
@@ -34,7 +40,7 @@ end)
 
 task.wait(0.5)
 
-game:GetService("StarterGui"):SetCore("SendNotification",{
+game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame", 
     Text = "Noclip Loaded // V to toggle", 
     Duration = 2,
