@@ -5,6 +5,7 @@ FlamePrivateUsers = {
 }
 
 if table.find(FlamePrivateUsers, player.UserId) then
+  task.wait(5)
   game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame Private", 
     Text = "Hello Flame Private user!",
