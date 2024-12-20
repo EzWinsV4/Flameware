@@ -1,34 +1,27 @@
 local HttpService = game:GetService("HttpService")
-local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local FlameExecutedEvent = ReplicatedStorage:WaitForChild("FlameExecuted")
 
-if not HttpService then
-    warn("HttpService is not available!")
-    return
-end
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1317863444183257159/PXH29_KOx8tUcTqYQIdeBbN6KKHrMtu8YB1D9J1gEQK7VSGjzgg7rVa9IPiY9UJt1mLx"
 
-local WEBHOOK_URL = "https://discord.com/api/webhooks/YOUR_SECURE_WEBHOOK_URL"
+FlameExecutedEvent.OnServerEvent:Connect(function(player, username, profilePictureUrl)
+    local currentTime = os.date("%Y-%m-%d %H:%M:%S")
 
-local FlameUser = Players.LocalPlayer
-local username = FlameUser.Name
-local userId = FlameUser.UserId
-local profilePictureUrl = string.format("https://www.roblox.com/headshot-thumbnail/image?userId=%d&width=420&height=420&format=png", userId)
+    local embed = {
+        ["title"] = "Flame Executed!",
+        ["description"] = string.format("Flame was executed by: %s", username),
+        ["footer"] = {["text"] = currentTime},
+        ["color"] = 3447003,
+        ["thumbnail"] = {["url"] = profilePictureUrl}
+    }
 
-local currentTime = os.date("%Y-%m-%d %H:%M:%S")
+    local payload = HttpService:JSONEncode({["embeds"] = {embed}})
 
-local embed = {
-    ["title"] = "Flame Executed!",
-    ["description"] = string.format("Flame was executed by: %s", username),
-    ["footer"] = {["text"] = currentTime},
-    ["color"] = 3447003,
-    ["thumbnail"] = {["url"] = profilePictureUrl}
-}
+    local success, errorMessage = pcall(function()
+        HttpService:PostAsync(WEBHOOK_URL, payload, Enum.HttpContentType.ApplicationJson)
+    end)
 
-local payload = HttpService:JSONEncode({["embeds"] = {embed}})
-
-local success, errorMessage = pcall(function()
-    HttpService:PostAsync(WEBHOOK_URL, payload, Enum.HttpContentType.ApplicationJson)
+    if not success then
+        warn("FLAME // webhook error: " .. errorMessage)
+    end
 end)
-
-if not success then
-    warn("FLAME // webhook error: " .. errorMessage)
-end
