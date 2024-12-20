@@ -2,6 +2,7 @@ local player = game:GetService("Players").LocalPlayer
 
 FlamePrivateUsers = {
   7701051029,
+  2758145996,
 }
 
 if table.find(FlamePrivateUsers, player.UserId) then
