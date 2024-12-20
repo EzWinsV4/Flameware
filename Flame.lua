@@ -1,7 +1,7 @@
 local player = game:GetService("Players").LocalPlayer
 
 FlamePrivateUsers = {
-  770105029,
+  7701051029,
   2758145996,
 }
 
