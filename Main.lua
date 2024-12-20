@@ -1,4 +1,9 @@
 if not getgenv().FlameExecuted then
+
+    if not game:IsLoaded() then
+        game.Loaded:Wait()
+    end
+    
     getgenv().FlameExecuted = true
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Aimlock.lua", true))()
