@@ -1,8 +1,12 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local FlameOwner = {7701051029}
-local FlamePrivateUsers = {2758145996}
+local FlameOwner = {
+    7727897981,
+}
+local FlamePrivateUsers = {
+    2758145996,
+}
 local FlameUsers = {}
 
 local function isInList(userId, list)
