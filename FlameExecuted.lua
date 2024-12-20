@@ -1,7 +1,12 @@
-local HttpsService = game:GetService("HttpService")
+local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1317863444183257159/PXH29_KOx8tUcTqYQIdeBbN6KKHrMtu8YB1D9J1gEQK7VSGjzgg7rVa9IPiY9UJt1mLx"
+if not HttpService then
+    warn("HttpService is not available!")
+    return
+end
+
+local WEBHOOK_URL = "https://discord.com/api/webhooks/YOUR_SECURE_WEBHOOK_URL"
 
 local FlameUser = Players.LocalPlayer
 local username = FlameUser.Name
