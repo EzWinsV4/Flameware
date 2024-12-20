@@ -8,6 +8,8 @@ if not getgenv().FlameExecuted then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Speed.lua", true))()
     task.wait(0.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Flame.lua", true))()
+    task.wait(0.5)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/TpFollow.lua", true))()
 
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Flame 2.0", 
