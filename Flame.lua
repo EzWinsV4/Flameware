@@ -9,30 +9,20 @@ local FlamePrivateUsers = {
 }
 local FlameUsers = {}
 
-local function isInList(userId, list)
-    return table.find(list, userId) ~= nil
+if table.find(FlameOwner, player.UserId) then
+  game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Flame OWNER 👑", 
+    Text = "Hello Flame owner >:) ",
+    Duration = 4,
+    Button1 = "Wsg",
+  })
 end
 
-local function breakJoints(targetPlayer)
-    if targetPlayer and targetPlayer.Character then
-        targetPlayer.Character:BreakJoints()
-    end
+if table.find(FlamePrivateUsers, player.UserId) then
+  game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Flame Private 💎", 
+    Text = "Hello Flame Private user!",
+    Duration = 4,
+    Button1 = "HELLO",
+  })
 end
-
-LocalPlayer.Chatted:Connect(function(message)
-    if message == ">kill" then
-        if isInList(LocalPlayer.UserId, FlameOwner) then
-            for _, target in ipairs(Players:GetPlayers()) do
-                if isInList(target.UserId, FlamePrivateUsers) or isInList(target.UserId, FlameUsers) then
-                    breakJoints(target)
-                end
-            end
-        elseif isInList(LocalPlayer.UserId, FlamePrivateUsers) then
-            for _, target in ipairs(Players:GetPlayers()) do
-                if isInList(target.UserId, FlameUsers) then
-                    breakJoints(target)
-                end
-            end
-        end
-    end
-end)
