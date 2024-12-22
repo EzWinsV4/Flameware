@@ -10,19 +10,53 @@ local FlamePrivateUsers = {
 
 local isOwner = table.find(FlameOwner, LocalPlayer.UserId) ~= nil
 local isPrivateUser = table.find(FlamePrivateUsers, LocalPlayer.UserId) ~= nil
-local FlameUser = not isOwner and not isPrivateUser
+local isFlameUser = not isOwner and not isPrivateUser
+
+local function sendCustomNotification(title, text, buttonText)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = title,
+        Text = text,
+        Duration = 4,
+        Button1 = buttonText,
+    })
+end
 
 if isOwner then
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Flame OWNER 👑", 
-        Text = "Hello Flame owner >:) ",
-        Duration = 4,
-        Button1 = "Wsg",
-    })
+    sendCustomNotification("Flame OWNER 👑", "Hello Flame owner >:)", "Wsg")
 elseif isPrivateUser then
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Flame Private 💎", 
-        Text = "Hello Flame Private user!",
-        Duration = 4,
-        Button1 = "HELLO",
-    })
+    sendCustomNotification("Flame Private 💎", "Hello Flame Private user!", "HELLO")
+end
+
+local function findFlameUsers(command)
+    if isOwner and command == ">find" then
+        local found = false
+        for _, player in ipairs(Players:GetPlayers()) do
+            if (table.find(FlamePrivateUsers, player.UserId) or table.find(FlameOwner, player.UserId)) and player ~= LocalPlayer then
+                sendCustomNotification(player.UserId == LocalPlayer.UserId and "Flame Owner 👑" or "Flame Private 💎", player.Name, "Found")
+                found = true
+            end
+        end
+        
+        if not found then
+            sendCustomNotification(">find", "We couldn't find any flame users", "Okay")
+        end
+    elseif isPrivateUser and command == ">find" then
+        local found = false
+        for _, player in ipairs(Players:GetPlayers()) do
+            if table.find(FlamePrivateUsers, player.UserId) and player ~= LocalPlayer then
+                sendCustomNotification("Flame Private 💎", player.Name, "Found")
+                found = true
+            end
+        end
+
+        if not found then
+            sendCustomNotification(">find", "We couldn't find any flame users", "Okay")
+        end
+    end
+end
+
+Players.LocalPlayer.Chatted:Connect(function(message)
+    if message:lower() == ">find" then
+        findFlameUsers(message)
+    end
+end)
