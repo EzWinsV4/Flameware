@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 local FlameOwner = {
-    7727897981,
+    7734698235,
 }
 local FlamePrivateUsers = {
     2758145996,
