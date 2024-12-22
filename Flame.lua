@@ -26,11 +26,3 @@ elseif isPrivateUser then
         Duration = 4,
         Button1 = "HELLO",
     })
-elseif isFlameUser then
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Flame User 🔥", 
-        Text = "Welcome to Flame!",
-        Duration = 4,
-        Button1 = "Okay",
-    })
-end
