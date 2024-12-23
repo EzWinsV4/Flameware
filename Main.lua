@@ -20,6 +20,14 @@ if not getgenv().FlameExecuted then
     task.wait(0.5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Flame.lua", true))()
     task.wait(0.5)
+
+    local Owner = {
+        7734698235,
+    }
+
+    local FlamePrivateUser = {
+        1,
+    }
     
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Flame 2.0", 
