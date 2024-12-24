@@ -7,19 +7,19 @@ if not getgenv().FlameExecuted then
     getgenv().FlameExecuted = true
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Aimlock.lua", true))()
-    task.wait(0.5)
+    task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/ESP.lua", true))()
-    task.wait(0.5)
+    task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Speed.lua", true))()
-    task.wait(0.5)
+    task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/TpFollow.lua", true))()
-    task.wait(0.5)
+    task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Fly.lua", true))()
-    task.wait(0.5)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Antivoid.lua", true))()
-    task.wait(0.5)
+    --task.wait(0.2)
+    --loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Antivoid.lua", true))()
+    task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Flame.lua", true))()
-    task.wait(0.5)
+    task.wait(0.2)
 
     local Owner = {
         7734698235,
