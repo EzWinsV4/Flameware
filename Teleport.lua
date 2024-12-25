@@ -46,7 +46,7 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Flame Module NOT LOADED:", 
-    Text = "TpFollow is not completed yet :<", 
+    Title = "Flame", 
+    Text = "Teleport Loaded!", 
     Duration = 2
 })
