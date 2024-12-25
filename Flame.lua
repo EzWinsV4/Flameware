@@ -23,7 +23,7 @@ end
 local function sendNotification(message)
     if LocalPlayer then
         game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Command Status",
+            Title = "Flame Private | Command Status:",
             Text = message,
             Duration = 5
         })
