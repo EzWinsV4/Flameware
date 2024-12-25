@@ -1,7 +1,8 @@
 local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 
-local player = Players.LocalPlayer
+local player = Players.LocalPlayer or Players:GetPlayers()[1]
 local teleporting = false
 
 local function isOnSameTeam(otherPlayer)
@@ -31,7 +32,8 @@ end
 
 local function startTeleporting()
     teleporting = true
-    while teleporting do
+    RunService.Heartbeat:Connect(function()
+        if not teleporting then return end
         local closestPlayer = getClosestPlayer()
         if closestPlayer and closestPlayer.Character and closestPlayer.Character:FindFirstChild("HumanoidRootPart") then
             local closestPosition = closestPlayer.Character.HumanoidRootPart.Position
@@ -39,8 +41,7 @@ local function startTeleporting()
                 player.Character.HumanoidRootPart.CFrame = CFrame.new(closestPosition + Vector3.new(0, 5, 0))
             end
         end
-        wait(0.1)
-    end
+    end)
 end
 
 local function stopTeleporting()
@@ -57,9 +58,3 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         end
     end
 end)
-
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Flame", 
-    Text = "TpFollow Loaded!", 
-    Duration = 2
-})
