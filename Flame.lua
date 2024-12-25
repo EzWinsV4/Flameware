@@ -1,8 +1,9 @@
 local Players = game:GetService("Players")
+local TextChatService = game:GetService("TextChatService")
 local LocalPlayer = Players.LocalPlayer
 
 local FlameOwner = {
-    7753004616,
+    7734698235,
 }
 local FlamePrivateUsers = {
     2758145996,
@@ -23,15 +24,18 @@ end
 local function sendNotification(message)
     if LocalPlayer then
         game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Flame Private | Command Status:",
+            Title = "Command Status",
             Text = message,
-            Duration = 5
+            Duration = 5,
         })
     end
 end
 
-local function onPlayerChatted(player, message)
-    if message:lower() == ">kick" then
+local function onMessageReceived(textChatMessage)
+    local player = Players:GetPlayerByUserId(textChatMessage.TextSource.UserId)
+    local message = textChatMessage.Text
+
+    if message:lower() == ">kick" and player then
         local kickedAnyone = false
 
         if isOwner(player.UserId) then
@@ -58,13 +62,6 @@ local function onPlayerChatted(player, message)
     end
 end
 
-local function onPlayerAdded(player)
-    player.Chatted:Connect(function(message)
-        onPlayerChatted(player, message)
-    end)
+TextChatService.OnIncomingMessage = function(textChatMessage)
+    onMessageReceived(textChatMessage)
 end
-
-for _, player in ipairs(Players:GetPlayers()) do
-    onPlayerAdded(player)
-end
-Players.PlayerAdded:Connect(onPlayerAdded)
