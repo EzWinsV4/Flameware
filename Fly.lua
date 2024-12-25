@@ -8,7 +8,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
 local flying = false
-local speed = 32
+local speed = 75
 local bodyVelocity
 local bodyGyro
 
