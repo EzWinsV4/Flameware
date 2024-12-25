@@ -82,3 +82,9 @@ runService.RenderStepped:Connect(function()
         end
     end
 end)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Flame", 
+    Text = "Fly Loaded!", 
+    Duration = 2
+})
