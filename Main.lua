@@ -12,6 +12,8 @@ if not getgenv().FlameExecuted then
     task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Speed.lua", true))()
     task.wait(0.2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Noclip.lua", true))()
+    task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Teleport.lua", true))()
     task.wait(0.2)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/TpFollow.lua", true))()
