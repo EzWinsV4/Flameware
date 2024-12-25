@@ -3,7 +3,7 @@ local TextChatService = game:GetService("TextChatService")
 local LocalPlayer = Players.LocalPlayer
 
 local FlameOwner = {
-    7734698235,
+    7753004616,
 }
 local FlamePrivateUsers = {
     2758145996,
@@ -24,7 +24,7 @@ end
 local function sendNotification(message)
     if LocalPlayer then
         game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Command Status",
+            Title = "FLAME PRIVATE | Command Status",
             Text = message,
             Duration = 5,
         })
