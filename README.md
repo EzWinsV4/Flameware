@@ -7,24 +7,24 @@ The script does not have a GUI at the moment but it does have notifications
 ### 📜 | SCRIPT: `loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Main.lua", true))()`
 -----------------
 ## 📰 | Script Included And Toggles:
-- Aimlock [Q]
-- Antivoid --/currently disabled
-- ESP [E]
-- Noclip [V]
-- Speed [B]
-- TpFollow [Z]
-- Teleport [X]
-- Flight [R] --/currently disabled
+- **Aimlock** [Q]
+- **Antivoid** --/currently disabled
+- **ESP** [E]
+- **Noclip** [V]
+- **Speed** [B]
+- **TpFollow** [Z]
+- **Teleport** [X]
+- **Flight** [R] --/currently disabled
 -----------------
 ## 📰 | Script Modules Info:
-- Aimlock:  Positions camera on to the closest enemy assisting with aim.
-- Antivoid:  When your roblox character is falling in the void it will detect this and teleport you back to safety
-- ESP:  Highlights players making it easy to find enemys and teamates
-- Noclip:  Allows to walk through walls and objects.
-- Speed:  Makes you go faster than the normal walking speed.
-- Flight:  Allows you to move around in the sky
-- TpFollow:  Teleports you to the closest enemy while also staying above their head and following them as they move
-- Teleport:  Teleports you to the nearest enemy
+- **Aimlock**:  Positions camera on to the closest enemy assisting with aim.
+- **Antivoid**:  When your roblox character is falling in the void it will detect this and teleport you back to safety
+- **ESP**:  Highlights players making it easy to find enemys and teamates
+- **Noclip**:  Allows to walk through walls and objects.
+- **Speed**:  Makes you go faster than the normal walking speed.
+- **Flight**:  Allows you to move around in the sky
+- **TpFollow**:  Teleports you to the closest enemy while also staying above their head and following them as they move
+- **Teleport**:  Teleports you to the nearest enemy
 -----------------
 # ❗🛑 | IMPORTANT NOTE | 🛑❗
 ### I AM NOT RESPONSIBLE FOR YOUR BANS AND PUNISHMENTS
