@@ -26,8 +26,8 @@ The script does not have a GUI at the moment but it does have notifications
 - **TpFollow**:  Teleports you to the closest enemy while also staying above their head and following them as they move
 - **Teleport**:  Teleports you to the nearest enemy
 -----------------
-# ❗🛑 | IMPORTANT NOTE | 🛑❗
-### I AM NOT RESPONSIBLE FOR YOUR BANS AND PUNISHMENTS
+## ❗ | Note:
+### I AM NOT RESPONSIBLE FOR YOUR BANS AND PUNISHMENTS.
 -----------------
 ## ❓ | How to use?
 ### Paste the script into your executors editor then execute the script. A notification should pop up saying Flame was executed.
