@@ -38,4 +38,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 ## 🎮 | Got any ideas, need help or want to keep track of the updates?:
 ### Join the discord ~ https://discord.gg/bKEUDDRAd2
 -----------------
-### Thats all from me, thanks for reading and enjoy the script! :D
+- ### Thats all from me, thanks for reading and enjoy the script! :D
