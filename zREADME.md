@@ -32,7 +32,7 @@
 ## ❓ | How to use?
 ### Paste the script into your executors editor then execute the script. A notification should pop up saying Flame was executed.
 -----------------
-# 🎮 Got any ideas, need help or want to keep track of the updates?:
+## 🎮 | Got any ideas, need help or want to keep track of the updates?:
 ### Join the discord ~ https://discord.gg/bKEUDDRAd2
 -----------------
 ### Thats all from me, thanks for reading and enjoy the script! :D
