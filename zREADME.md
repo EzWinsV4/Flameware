@@ -4,7 +4,7 @@
 ### Status: UNDETECTED | 🟢
 ### The script does not have a GUI at the moment but it does have notifications
 -----------------
-### 📜 | SCRIPT: `loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Main.lua", true))()`
+## 📜 | SCRIPT: `loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Main.lua", true))()`
 -----------------
 ## 📰 | Script Included And Toggles:
 - **Aimlock** [Q]
