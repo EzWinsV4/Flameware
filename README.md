@@ -1,8 +1,8 @@
 # 🎯🔫 FLAME FOR ROBLOX RIVALS SCRIPT 🔫🎯
 -----------------
-Roblox script made for the game Rivals
-Status: UNDETECTED | 🟢
-The script does not have a GUI at the moment but it does have notifications
+### Roblox script made for the game Rivals
+### Status: UNDETECTED | 🟢
+### The script does not have a GUI at the moment but it does have notifications
 -----------------
 ### 📜 | SCRIPT: `loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Main.lua", true))()`
 -----------------
