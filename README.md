@@ -1,5 +1,3 @@
-![FlameImage](https://github.com/EzWinsV4/FlameForRobloxRivals/blob/main/FlameLogoGradient.png?raw=true)
------------------
 # 🎯🔫 FLAME FOR ROBLOX RIVALS SCRIPT 🔫🎯
 -----------------
 ### Roblox script made for the game Rivals
