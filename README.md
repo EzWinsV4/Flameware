@@ -1,11 +1,11 @@
 <p align="center">
   <picture>
-    <img alt="vape logo" src="./Images/FlameLogo.png">
+    <img alt="flame logo" src="./Images/FlameLogo.png" width="auto" hight="100">
   </picture>
 </p>
 <h2 align="center">
   For Roblox Rivals
-</h2>
+</h2> 
 -----------------
 # 🎯🔫 FLAME FOR ROBLOX RIVALS SCRIPT 🔫🎯
 -----------------
