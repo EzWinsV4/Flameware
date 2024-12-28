@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <img alt="flame logo" src="./Images/FlameLogo.png" width="auto" hight="100">
+    <img alt="flame logo" src="./Images/FlameLogo.png" style="max-height: 150px;">
   </picture>
 </p>
 <h2 align="center">
