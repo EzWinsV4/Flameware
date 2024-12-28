@@ -29,16 +29,27 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 - **Teleport**:  Teleports you to the nearest enemy
 -----------------
 ## 🔮 Future Coming:
-- Autowin
-- Autoshoot
-- Flight
-- Nametags
-- Projectile Exploit
-- Boost Jump
-- Health Display
-- Climb
-- invisibility
-- 
+- **Autowin**
+- **Autoshoot**
+- **Flight**
+- **Nametags**
+- **ProjectileExploit**
+- **BoostJump**
+- **HealthDisplay**
+- **Climb**
+- **invisibility**
+- **Reach**
+- **StaffDetector**
+- **Anti AFK**
+- **GravityManipulator**
+- **Xray**
+- **Trail**
+- **Crosshair**
+- **PingDisplay**
+- **FpsDisplay**
+- **FpsBooster**
+- **MovementDisplay**
+- **PlayInfo**
 -----------------
 ## ❗ | Note:
 ### I AM NOT RESPONSIBLE FOR YOUR BANS AND PUNISHMENTS.
