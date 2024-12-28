@@ -9,7 +9,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobloxRivals/refs/heads/main/Main.lua", true))()
 ```
 -----------------
-## 📰 | Script Included And Toggles:
+## 📰 | Features:
 - **Aimlock** [Q]
 - **Antivoid** --/currently disabled
 - **ESP** [E]
@@ -17,7 +17,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 - **Speed** [B]
 - **TpFollow** [Z]
 - **Teleport** [X]
-- **Flight** [R] --/currently disabled
 -----------------
 ## 📰 | Script Modules Info:
 - **Aimlock**:  Positions camera on to the closest enemy assisting with aim.
@@ -28,6 +27,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 - **Flight**:  Allows you to move around in the sky
 - **TpFollow**:  Teleports you to the closest enemy while also staying above their head and following them as they move
 - **Teleport**:  Teleports you to the nearest enemy
+-----------------
+## 🔮 Future Coming:
+- Autowin
+- Autoshoot
+- Flight
+- Nametags
+- Projectile Exploit
+- Boost Jump
+- Health Display
+- Climb
+- invisibility
+- 
 -----------------
 ## ❗ | Note:
 ### I AM NOT RESPONSIBLE FOR YOUR BANS AND PUNISHMENTS.
