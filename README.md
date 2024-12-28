@@ -1,3 +1,12 @@
+<p align="center">
+  <picture>
+    <img alt="vape logo" src="./Images/FlameLogo.png">
+  </picture>
+</p>
+<h2 align="center">
+  For Roblox Rivals
+</h2>
+-----------------
 # 🎯🔫 FLAME FOR ROBLOX RIVALS SCRIPT 🔫🎯
 -----------------
 ### Roblox script made for the game Rivals
