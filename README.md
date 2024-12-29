@@ -22,14 +22,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 ```
 -----------------
 ## 📰 | Features:
-- 🎯 Aimlock [Q]
-- 🚫 Antivoid --/currently disabled
-- 👀 ESP [E]
-- 🚪 Noclip [V]
-- 🏃‍♂️ Speed [B]
-- 📍 TpFollow [Z]
-- 🌍 Teleport [X]
-- ✈️ Flight [R] --/currently disabled
+- 🎯 **Aimlock** [Q]
+- 🚫 **Antivoid** *--/currently disabled*
+- 👀 **ESP** [E]
+- 🚪 **Noclip** [V]
+- 🏃‍♂️ **Speed** [B]
+- 📍 **TpFollow** [Z]
+- 🌍 **Teleport** [X]
+- ✈️ **Flight** [R] *--/currently disabled*
 -----------------
 ## 📰 | Script Modules Info:
 - **Aimlock**:  Positions camera on to the closest enemy assisting with aim.
@@ -42,27 +42,27 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 - **Teleport**:  Teleports you to the nearest enemy
 -----------------
 ## 🔮 Future Coming:
-- 🏆 Autowin
-- 🔫 Autoshoot
-- ✈️ Flight
-- 🏷️ Nametags
-- 💥 ProjectileExploit
-- 🚀 BoostJump
-- ❤️ HealthDisplay
-- 🧗‍♂️ Climb
-- 🕶️ Invisibility
-- ✋ Reach
-- 🔍 StaffDetector
-- ⏰ Anti AFK
-- 🌌 GravityManipulator
-- 🧊 Xray
-- 🌀 Trail
-- ➕ Crosshair
-- 📡 PingDisplay
-- 🎮 FpsDisplay
-- ⚡ FpsBooster
-- 🕹️ MovementDisplay
-- 🎵 PlayInfo
+- 🏆 **Autowin**
+- 🔫 **Autoshoot**
+- ✈️ **Flight**
+- 🏷️ **Nametags**
+- 💥 **ProjectileExploit**
+- 🚀 **BoostJump**
+- ❤️ **HealthDisplay**
+- 🧗‍♂️ **Climb**
+- 🕶️ **Invisibility**
+- ✋ **Reach**
+- 🔍 **StaffDetector**
+- ⏰ **AntiAFK**
+- 🌌 **GravityManipulator**
+- 🧊 **Xray**
+- 🌀 **Trail**
+- ➕ **Crosshair**
+- 📡 **PingDisplay**
+- 🎮 **FpsDisplay**
+- ⚡ **FpsBooster**
+- 🕹️ **MovementDisplay**
+- 🎵 **PlayInfo**
 -----------------
 ## ❗ | Note:
 ### I AM NOT RESPONSIBLE FOR YOUR BANS AND PUNISHMENTS.
