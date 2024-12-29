@@ -22,13 +22,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 ```
 -----------------
 ## 📰 | Features:
-- **Aimlock** [Q]
-- **Antivoid** --/currently disabled
-- **ESP** [E]
-- **Noclip** [V]
-- **Speed** [B]
-- **TpFollow** [Z]
-- **Teleport** [X]
+- 🎯 Aimlock [Q]
+- 🚫 Antivoid --/currently disabled
+- 👀 ESP [E]
+- 🚪 Noclip [V]
+- 🏃‍♂️ Speed [B]
+- 📍 TpFollow [Z]
+- 🌍 Teleport [X]
+- ✈️ Flight [R] --/currently disabled
 -----------------
 ## 📰 | Script Modules Info:
 - **Aimlock**:  Positions camera on to the closest enemy assisting with aim.
