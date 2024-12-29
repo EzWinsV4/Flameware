@@ -49,7 +49,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 - **BoostJump**
 - **HealthDisplay**
 - **Climb**
-- **invisibility**
+- **Invisibility**
 - **Reach**
 - **StaffDetector**
 - **Anti AFK**
