@@ -10,6 +10,7 @@
   <br/>
   Never lose again.
 </h2>
+
 -----------------
 ### Roblox script made for the game Rivals
 ### Status: UNDETECTED | 🟢
