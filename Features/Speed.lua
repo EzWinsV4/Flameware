@@ -2,7 +2,7 @@ local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 
-local speed = 3
+local speed = 2
 local tpwalking = true
 local toggleKey = Enum.KeyCode.B
 
