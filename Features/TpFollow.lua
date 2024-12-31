@@ -58,3 +58,9 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         end
     end
 end)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Flame", 
+    Text = "TpFollow Loaded! // Z to toggle", 
+    Duration = 2,
+})
