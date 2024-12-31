@@ -117,3 +117,4 @@ StarterGui:SetCore("SendNotification", {
     Text = "Autoshoot Loaded! // T to toggle", 
     Duration = 2,
 })
+
