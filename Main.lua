@@ -26,7 +26,7 @@ if not getgenv().FlameExecuted then
     task.wait(0.2)
 
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Flame 2.0", 
+        Title = " 🔥 Flame 🔥", 
         Text = "Flame for Rivals Script Executed!", 
         Duration = 4, 
         Button1 = "Cool"
