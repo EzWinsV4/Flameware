@@ -113,6 +113,6 @@ end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame",
-    Text = "Flight Loaded! R to toggle",
+    Text = "Flight Loaded! // R to toggle",
     Duration = 2,
 })
