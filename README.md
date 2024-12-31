@@ -24,12 +24,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 ## 📰 | Features:
 - 🎯 **Aimlock** [Q]
 - 🚫 **Antivoid** *--/currently disabled*
+- 🔫 **Autoshoot**
 - 👀 **ESP** [E]
+- ✈️ **Flight** [R] *--/currently disabled*
 - 🚪 **Noclip** [V]
 - 🏃‍♂️ **Speed** [B]
-- 📍 **TpFollow** [Z]
 - 🌍 **Teleport** [X]
-- ✈️ **Flight** [R] *--/currently disabled*
+- 📍 **TpFollow** [Z]
 -----------------
 ## 📰 | Script Modules Info:
 - **Aimlock**:  Positions camera on to the closest enemy assisting with aim.
@@ -43,7 +44,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 -----------------
 ## 🔮 Future Coming:
 - 🏆 **Autowin**
-- 🔫 **Autoshoot**
 - ✈️ **Flight**
 - 🏷️ **Nametags**
 - 💥 **ProjectileExploit**
