@@ -37,8 +37,10 @@ local function startTeleporting()
         local closestPlayer = getClosestPlayer()
         if closestPlayer and closestPlayer.Character and closestPlayer.Character:FindFirstChild("HumanoidRootPart") then
             local closestPosition = closestPlayer.Character.HumanoidRootPart.Position
+            local direction = (player.Character.HumanoidRootPart.Position - closestPosition).unit
+            local behindPosition = closestPosition - direction * 3
             if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-                player.Character.HumanoidRootPart.CFrame = CFrame.new(closestPosition + Vector3.new(0, 5, 0))
+                player.Character.HumanoidRootPart.CFrame = CFrame.new(behindPosition + Vector3.new(0, 5, 0))
             end
         end
     end)
