@@ -47,6 +47,6 @@ end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame", 
-    Text = "Teleport Loaded!", 
+    Text = "Teleport Loaded! // X to teleport", 
     Duration = 2
 })
