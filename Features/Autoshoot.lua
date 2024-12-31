@@ -1,3 +1,5 @@
+-- credits to Vape V4
+
 local lplr = game.Players.LocalPlayer
 local gameCamera = game.Workspace.CurrentCamera
 local inputService = game:GetService("UserInputService")
