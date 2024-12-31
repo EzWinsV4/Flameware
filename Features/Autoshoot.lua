@@ -74,3 +74,9 @@ run(function()
 		task.wait()
 	until false
 end)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Flame", 
+    Text = "Autoshoot Loaded! // T to toggle", 
+    Duration = 2,
+})
