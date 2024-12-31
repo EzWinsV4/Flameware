@@ -40,6 +40,6 @@ end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame", 
-    Text = "Speed Loaded",
+    Text = "Speed Loaded // B to toggle",
     Duration = 2,
 })
