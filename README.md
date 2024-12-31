@@ -24,7 +24,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 ## 📰 | Features:
 - 🎯 **Aimlock** [Q]
 - 🚫 **Antivoid** *--/currently disabled*
-- 🔫 **Autoshoot**
 - 👀 **ESP** [E]
 - ✈️ **Flight** [R] *--/currently disabled*
 - 🚪 **Noclip** [V]
