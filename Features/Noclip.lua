@@ -1,8 +1,8 @@
-local players = game:GetService("Players")
-local userInputService = game:GetService("UserInputService")
-local runService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
 
-local player = players.LocalPlayer
+local player = Players.LocalPlayer
 local noclipEnabled = false
 
 local function toggleNoclip()
@@ -15,14 +15,14 @@ local function toggleNoclip()
     })
 end
 
-userInputService.InputBegan:Connect(function(input, gameProcessed)
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
     if input.KeyCode == Enum.KeyCode.V then
         toggleNoclip()
     end
 end)
 
-runService.Stepped:Connect(function()
+RunService.Stepped:Connect(function()
     while true do
         task.wait(5)
 
