@@ -1,21 +1,21 @@
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 
-local highlightingEnabled = false
+local ESP = false
 
-local function highlightPlayer(player)
+local function EspActivate(player)
     if player.Character then
-        local existingHighlight = player.Character:FindFirstChild("Highlight")
+        local existingEsp = player.Character:FindFirstChild("Highlight")
 
-        if not highlightingEnabled then
-            if existingHighlight then
-                existingHighlight:Destroy()
+        if not ESP then
+            if existingEsp then
+                existingEsp:Destroy()
             end
             return
         end
 
-        if existingHighlight then
-            existingHighlight:Destroy()
+        if existingEsp then
+            existingEsp:Destroy()
         end
 
         local highlight = Instance.new("Highlight")
@@ -26,28 +26,28 @@ local function highlightPlayer(player)
     end
 end
 
-local function toggleHighlighting()
-    highlightingEnabled = not highlightingEnabled
+local function toggleEsp()
+    ESP = not ESP
     for _, player in pairs(Players:GetPlayers()) do
         if player.Character then
-            highlightPlayer(player)
+            EspActivate(player)
         end
     end
 end
 
 for _, player in pairs(Players:GetPlayers()) do
     if player.Character then
-        highlightPlayer(player)
+        EspActivate(player)
     end
 
     player.CharacterAdded:Connect(function()
-        highlightPlayer(player)
+        EspActivate(player)
     end)
 end
 
 Players.PlayerAdded:Connect(function(player)
     player.CharacterAdded:Connect(function()
-        highlightPlayer(player)
+        EspActivate(player)
     end)
 end)
 
@@ -55,7 +55,7 @@ UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
     if gameProcessedEvent then return end
 
     if input.KeyCode == Enum.KeyCode.E then
-        toggleHighlighting()
+        toggleEsp()
     end
 end)
 
