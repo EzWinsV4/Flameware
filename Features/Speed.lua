@@ -3,7 +3,7 @@ local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 
 local speed = 2
-local tpwalking = true
+local speeding = true
 local toggleKey = Enum.KeyCode.B
 
 task.spawn(function()
@@ -13,7 +13,7 @@ task.spawn(function()
         local humanoid = char:FindFirstChildWhichIsA("Humanoid")
 
         if humanoid then
-            while tpwalking and char and humanoid and humanoid.Parent do
+            while speeding and char and humanoid and humanoid.Parent do
                 local delta = RunService.Heartbeat:Wait()
 
                 if humanoid.MoveDirection.Magnitude > 0 then
@@ -28,8 +28,8 @@ end)
 UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
     if gameProcessedEvent then return end
     if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == toggleKey then
-        tpwalking = not tpwalking
-        local state = tpwalking and "Enabled" or "Disabled"
+        speeding = not speeding
+        local state = speeding and "Enabled" or "Disabled"
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Flame", 
             Text = "Speed " .. state,
