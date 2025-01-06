@@ -20,9 +20,15 @@ local function EspActivate(player)
 
         local highlight = Instance.new("Highlight")
         highlight.Parent = player.Character
-        highlight.FillColor = Color3.new(251, 71, 0)
-        highlight.OutlineColor = Color3.new(0, 0, 0)
         highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+
+        if player.Team == Players.LocalPlayer.Team then
+            highlight.FillColor = Color3.new(0, 1, 0)
+        else
+            highlight.FillColor = Color3.new(1, 0, 0)
+        end
+
+        highlight.OutlineColor = Color3.new(0, 0, 0)
     end
 end
 
