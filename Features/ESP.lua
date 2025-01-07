@@ -16,7 +16,7 @@ local function EspActivate(player)
         if player.Team and Players.LocalPlayer.Team then
             highlight.FillColor = (player.Team == Players.LocalPlayer.Team) and Color3.new(0, 1, 0) or Color3.new(1, 0, 0)
         else
-            highlight.FillColor = Color3.new(0, 0 , 1) -- Default color if team is nil
+            highlight.FillColor = Color3.new(0, 0 , 1)
         end
         highlight.OutlineColor = Color3.new(0, 0, 0)
     end
