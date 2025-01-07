@@ -13,7 +13,11 @@ local function EspActivate(player)
         local highlight = Instance.new("Highlight")
         highlight.Parent = player.Character
         highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-        highlight.FillColor = (player.Team == Players.LocalPlayer.Team) and Color3.new(0, 1, 0) or Color3.new(1, 0, 0)
+        if player.Team and Players.LocalPlayer.Team then
+            highlight.FillColor = (player.Team == Players.LocalPlayer.Team) and Color3.new(0, 1, 0) or Color3.new(1, 0, 0)
+        else
+            highlight.FillColor = Color3.new(0, 0 , 1) -- Default color if team is nil
+        end
         highlight.OutlineColor = Color3.new(0, 0, 0)
     end
 end
@@ -21,28 +25,30 @@ end
 local function toggleEsp()
     ESP = not ESP
     for _, player in pairs(Players:GetPlayers()) do
-        if player.Character then EspActivate(player) end
+        EspActivate(player)
     end
 end
 
 for _, player in pairs(Players:GetPlayers()) do
-    if player.Character then EspActivate(player) end
+    EspActivate(player)
     player.CharacterAdded:Connect(function() EspActivate(player) end)
-    player.TeamChanged:Connect(function() EspActivate(player) end)
+    player:GetPropertyChangedSignal("Team"):Connect(function() EspActivate(player) end)
 end
 
 Players.PlayerAdded:Connect(function(player)
     player.CharacterAdded:Connect(function() EspActivate(player) end)
-    player.TeamChanged:Connect(function() EspActivate(player) end)
+    player:GetPropertyChangedSignal("Team"):Connect(function() EspActivate(player) end)
 end)
 
 UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
     if gameProcessedEvent then return end
-    if input.KeyCode == Enum.KeyCode.E then toggleEsp() end
+    if input.KeyCode == Enum.KeyCode.E then
+        toggleEsp()
+    end
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Flame", 
-    Text = "ESP Loaded! // E for ESP!", 
+    Title = "Flame",
+    Text = "ESP Loaded! Press 'E' to toggle ESP.",
     Duration = 2
 })
