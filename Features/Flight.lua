@@ -102,7 +102,7 @@ end
 
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
-    if input.KeyCode == Enum.KeyCode.R then
+    if input.KeyCode == Enum.KeyCode.F then
         if FLYING then
             stopFly()
         else
@@ -113,6 +113,6 @@ end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Flame",
-    Text = "Flight Loaded! // R to toggle",
+    Text = "Flight Loaded! // F to toggle",
     Duration = 2,
 })
