@@ -25,7 +25,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EzWinsV4/FlameForRobl
 - 🎯 **Aimlock** [Q]
 - 🚫 **Antivoid** *--/currently disabled*
 - 👀 **ESP** [E]
-- ✈️ **Flight** [R] *--/currently disabled*
+- ✈️ **Flight** [F]
 - 🚪 **Noclip** [V]
 - 🏃‍♂️ **Speed** [B]
 - 🌍 **Teleport** [X]
