@@ -31,7 +31,7 @@ if not getgenv().FlameExecuted then
     })
 else
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "!Error:", 
+        Title = "❌ Error ❌", 
         Text = "Script has already been executed!", 
         Duration = 4
     })
