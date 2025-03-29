@@ -14,7 +14,6 @@
 -----------------
 ### Roblox script made for the game Rivals
 ### Status: UNDETECTED | 🟢
-### The script does not have a GUI at the moment but it does have notifications
 -----------------
 ## 📜 | SCRIPT: 
 ```lua
